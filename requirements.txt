@@ -2,12 +2,12 @@
 #
 #   python -m venv .venv && . .venv/bin/activate
 #   pip install -r requirements.txt
-#   PYTHONPATH=src python -m fs_collections_agent
+#   PYTHONPATH=src python -m ar_collections_agent
 #
-# Or, to get the `fs-collections-agent` console script on your PATH:
+# Or, to get the `ar-collections-agent` console script on your PATH:
 #
 #   pip install -e .        # same pins, resolved from pyproject.toml
-#   fs-collections-agent
+#   ar-collections-agent
 #
 # Runtime: one dependency. Every calculation, date walk and state transition uses
 # the standard library, which is one fewer thing that can break on your machine.

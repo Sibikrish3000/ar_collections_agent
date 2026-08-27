@@ -7,9 +7,9 @@ from decimal import Decimal
 
 import pytest
 
-from fs_collections_agent import policy_engine
-from fs_collections_agent.ledger import CustomerStats
-from fs_collections_agent.models import (
+from ar_collections_agent import policy_engine
+from ar_collections_agent.ledger import CustomerStats
+from ar_collections_agent.models import (
     ActionType,
     DecisionOutcome,
     Hold,

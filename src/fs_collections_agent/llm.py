@@ -7,7 +7,7 @@ model name are all configuration:
     export LLM_BASE_URL=https://my-gateway.example/v1
     export LLM_API_KEY=sk-...
     export LLM_MODEL=my-deployed-model
-    fs-collections-agent classify --llm
+    ar-collections-agent classify --llm
 
 ``OPENAI_BASE_URL`` / ``OPENAI_API_KEY`` / ``OPENAI_MODEL`` are honoured as
 fallbacks, so an environment already set up for the official API needs no changes.
@@ -136,7 +136,7 @@ def complete(
     except ImportError:
         return LLMResult(
             error="the optional `openai` package is not installed "
-            "(pip install 'fs-collections-agent[llm]')"
+            "(pip install 'ar-collections-agent[llm]')"
         )
 
     messages = [

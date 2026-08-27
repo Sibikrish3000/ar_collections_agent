@@ -8,7 +8,7 @@ from decimal import Decimal
 
 import pytest
 
-from fs_collections_agent.ledger import AsOfLedger
+from ar_collections_agent.ledger import AsOfLedger
 
 START = date(2025, 3, 1)
 END = date(2026, 8, 26)

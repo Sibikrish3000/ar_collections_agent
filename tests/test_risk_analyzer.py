@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import date
 from decimal import Decimal
 
-from fs_collections_agent.risk_analyzer import RiskAnalyzer, render_markdown
+from ar_collections_agent.risk_analyzer import RiskAnalyzer, render_markdown
 
 LEDGER_DATE = date(2026, 8, 26)
 

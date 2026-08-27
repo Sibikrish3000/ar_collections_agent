@@ -1,4 +1,4 @@
-"""``python -m fs_collections_agent``."""
+"""``python -m ar_collections_agent``."""
 
 from __future__ import annotations
 

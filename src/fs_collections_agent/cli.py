@@ -1,9 +1,9 @@
 """Single CLI entry point.
 
-    fs-collections-agent                 # classify -> replay -> risk
-    fs-collections-agent replay
-    fs-collections-agent classify [--llm]
-    fs-collections-agent risk
+    ar-collections-agent                 # classify -> replay -> risk
+    ar-collections-agent replay
+    ar-collections-agent classify [--llm]
+    ar-collections-agent risk
 
 Nothing here sends email; there is no SMTP client anywhere in this package. The
 only writes are inside ``--out-dir`` (plus the reply-classification cache in
@@ -41,7 +41,7 @@ def _resolve(path: Path, root: Path) -> Path:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="fs-collections-agent",
+        prog="ar-collections-agent",
         description=(
             "Deterministic AR collections agent: dry-run replay of the escalation "
             "policy over the full invoice history, plus open-invoice risk flagging."

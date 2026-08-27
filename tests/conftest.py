@@ -10,10 +10,10 @@ from pathlib import Path
 
 import pytest
 
-from fs_collections_agent import email_classifier, replay_engine
-from fs_collections_agent.config import Policy
-from fs_collections_agent.ledger import AsOfLedger
-from fs_collections_agent.models import (
+from ar_collections_agent import email_classifier, replay_engine
+from ar_collections_agent.config import Policy
+from ar_collections_agent.ledger import AsOfLedger
+from ar_collections_agent.models import (
     Contact,
     ContactRole,
     Customer,

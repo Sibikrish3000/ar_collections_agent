@@ -15,7 +15,7 @@ __all__ = ["main"]
 
 
 def main() -> None:
-    """Console-script entry point (``fs-collections-agent``)."""
+    """Console-script entry point (``ar-collections-agent``)."""
     from .cli import main as cli_main
 
     raise SystemExit(cli_main(sys.argv[1:]))

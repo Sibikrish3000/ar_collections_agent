@@ -1,7 +1,7 @@
 """Strict day-by-day replay of the collections agent over the full history.
 
 The engine walks one calendar day at a time. On day ``T`` it holds a
-:class:`~fs_collections_agent.ledger.LedgerView` for ``T`` and nothing else, so
+:class:`~ar_collections_agent.ledger.LedgerView` for ``T`` and nothing else, so
 no decision can be informed by a payment, invoice or email that had not happened
 yet. All carried state (holds, reminder counts, dead mailboxes, legal locks)
 moves forward only — it is never recomputed from later facts.

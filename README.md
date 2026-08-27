@@ -14,7 +14,7 @@ Requires Python 3.13+. With [uv](https://docs.astral.sh/uv/):
 
 ```bash
 uv sync --group dev
-uv run fs-collections-agent          # classify replies -> replay -> risk report
+uv run ar-collections-agent          # classify replies -> replay -> risk report
 uv run pytest -q                     # 143 tests
 ```
 
@@ -23,16 +23,16 @@ With plain pip:
 ```bash
 python -m venv .venv && . .venv/bin/activate
 pip install -e .                     # or: pip install -r requirements.txt
-fs-collections-agent                 # or: PYTHONPATH=src python -m fs_collections_agent
+ar-collections-agent                 # or: PYTHONPATH=src python -m ar_collections_agent
 ```
 
 Subcommands and options:
 
 ```bash
-fs-collections-agent replay --as-of 2026-08-26
-fs-collections-agent classify --llm  # optional LLM intent pass
-fs-collections-agent risk
-fs-collections-agent --help
+ar-collections-agent replay --as-of 2026-08-26
+ar-collections-agent classify --llm  # optional LLM intent pass
+ar-collections-agent risk
+ar-collections-agent --help
 ```
 
 ## Optional LLM endpoint
@@ -42,12 +42,12 @@ The default run uses no model at all. `--llm` (reply intent labelling) and
 the official API, a gateway, OpenRouter, vLLM, Ollama, LM Studio:
 
 ```bash
-pip install 'fs-collections-agent[llm]'      # or: uv sync --extra llm
+pip install 'ar-collections-agent[llm]'      # or: uv sync --extra llm
 
 export LLM_BASE_URL=https://my-gateway.example/v1
 export LLM_API_KEY=sk-...
 export LLM_MODEL=my-deployed-model
-fs-collections-agent classify --llm
+ar-collections-agent classify --llm
 ```
 
 `OPENAI_BASE_URL` / `OPENAI_API_KEY` / `OPENAI_MODEL` work as fallbacks, and
@@ -76,7 +76,7 @@ anyone without a key.
 
 ```
 config/escalation_policy.yaml   tiers, timings, holds, guardrails, risk weights
-src/fs_collections_agent/
+src/ar_collections_agent/
   ledger.py            as-of ledger - the single gate that makes future leakage impossible
   models.py            typed domain state (Decimal money, date-only arithmetic)
   email_classifier.py  inbound reply -> typed intent (rules first; optional LLM; legal override)

@@ -12,15 +12,15 @@ from decimal import Decimal
 
 import pytest
 
-from fs_collections_agent import llm
-from fs_collections_agent.email_classifier import (
+from ar_collections_agent import llm
+from ar_collections_agent.email_classifier import (
     EmailClassifier,
     load_or_classify,
     read_cache,
     resolve_dates,
     write_cache,
 )
-from fs_collections_agent.models import InboundEmail, Intent
+from ar_collections_agent.models import InboundEmail, Intent
 
 EXPECTED_INTENTS = {
     "01_reply.txt": Intent.OUT_OF_OFFICE,
@@ -244,14 +244,14 @@ def test_endpoint_failure_is_returned_not_raised(monkeypatch) -> None:
 
 
 def test_draft_polish_keeps_the_deterministic_text_on_failure() -> None:
-    from fs_collections_agent.drafting import Draft, polish_with_llm
+    from ar_collections_agent.drafting import Draft, polish_with_llm
 
     draft = Draft(subject="s", body="Invoice INV-2001 for $1,000.00", engine="template")
     assert polish_with_llm(draft, llm.LLMConfig()) == draft
 
 
 def test_draft_polish_rejects_a_rewrite_that_changes_figures(monkeypatch) -> None:
-    from fs_collections_agent import drafting
+    from ar_collections_agent import drafting
 
     draft = drafting.Draft(
         subject="s", body="Invoice INV-2001 for $1,000.00 is 5 days late.", engine="template"
@@ -265,7 +265,7 @@ def test_draft_polish_rejects_a_rewrite_that_changes_figures(monkeypatch) -> Non
 
 
 def test_draft_polish_accepts_a_rewrite_that_preserves_figures(monkeypatch) -> None:
-    from fs_collections_agent import drafting
+    from ar_collections_agent import drafting
 
     draft = drafting.Draft(
         subject="s", body="Invoice INV-2001 for $1,000.00 is 5 days late.", engine="template"

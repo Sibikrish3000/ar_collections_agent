@@ -1,6 +1,6 @@
 # System Architecture Document
 
-A comprehensive technical reference detailing the architecture, execution model, state machine, and data flow of the `fs-collections-agent` system.
+A comprehensive technical reference detailing the architecture, execution model, state machine, and data flow of the `ar-collections-agent` system.
 
 ---
 
@@ -84,16 +84,16 @@ The package is partitioned into single-responsibility modules:
 
 | Module | Responsibility | Invariants & Constraints |
 | :--- | :--- | :--- |
-| `src/fs_collections_agent/ledger.py` | As-of ledger gating & balance tracking | Read-only time travel; strictly forbids leaking post-`as_of` data |
-| `src/fs_collections_agent/models.py` | Typed domain dataclasses and enums | `Decimal` money arithmetic; pure `datetime.date` objects; zero IO |
-| `src/fs_collections_agent/email_classifier.py` | Inbound email intent extraction | Rules-first; optional LLM NLU; post-LLM deterministic legal override |
-| `src/fs_collections_agent/policy_engine.py` | Escalation state machine & hold rankings | Pure functions; zero IO; deterministic single-path decisions |
-| `src/fs_collections_agent/replay_engine.py` | 532-day sequential simulation | Step order: balance sync $\rightarrow$ reply ingest $\rightarrow$ hold expiry $\rightarrow$ act |
-| `src/fs_collections_agent/drafting.py` | Template rendering & prose rewording | Regex figure verification gate (`_FIGURE_RE`); fail-soft fallback |
-| `src/fs_collections_agent/risk_analyzer.py` | Open invoice late-payment risk model | Empirical statistics (median, stdev, exposure); zero opaque ML |
-| `src/fs_collections_agent/llm.py` | Lazy OpenAI-compatible HTTP client | Fail-soft; returns `LLMResult(error=...)`; never raises exceptions |
-| `src/fs_collections_agent/config.py` | YAML configuration parsing & validation | Loads escalation thresholds, grace settings, cadence, and templates |
-| `src/fs_collections_agent/cli.py` | Single CLI entry point | Coordinates commands: `all`, `replay`, `classify`, `risk` |
+| `src/ar_collections_agent/ledger.py` | As-of ledger gating & balance tracking | Read-only time travel; strictly forbids leaking post-`as_of` data |
+| `src/ar_collections_agent/models.py` | Typed domain dataclasses and enums | `Decimal` money arithmetic; pure `datetime.date` objects; zero IO |
+| `src/ar_collections_agent/email_classifier.py` | Inbound email intent extraction | Rules-first; optional LLM NLU; post-LLM deterministic legal override |
+| `src/ar_collections_agent/policy_engine.py` | Escalation state machine & hold rankings | Pure functions; zero IO; deterministic single-path decisions |
+| `src/ar_collections_agent/replay_engine.py` | 532-day sequential simulation | Step order: balance sync $\rightarrow$ reply ingest $\rightarrow$ hold expiry $\rightarrow$ act |
+| `src/ar_collections_agent/drafting.py` | Template rendering & prose rewording | Regex figure verification gate (`_FIGURE_RE`); fail-soft fallback |
+| `src/ar_collections_agent/risk_analyzer.py` | Open invoice late-payment risk model | Empirical statistics (median, stdev, exposure); zero opaque ML |
+| `src/ar_collections_agent/llm.py` | Lazy OpenAI-compatible HTTP client | Fail-soft; returns `LLMResult(error=...)`; never raises exceptions |
+| `src/ar_collections_agent/config.py` | YAML configuration parsing & validation | Loads escalation thresholds, grace settings, cadence, and templates |
+| `src/ar_collections_agent/cli.py` | Single CLI entry point | Coordinates commands: `all`, `replay`, `classify`, `risk` |
 
 ---
 

@@ -1,5 +1,5 @@
 [project]
-name = "fs-collections-agent"
+name = "ar-collections-agent"
 version = "0.1.0"
 description = "Deterministic accounts-receivable collections agent with dry-run replay and open-invoice risk flagging"
 readme = "README.md"
@@ -31,7 +31,7 @@ dev = [
 ]
 
 [project.scripts]
-fs-collections-agent = "fs_collections_agent:main"
+ar-collections-agent = "ar_collections_agent:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]

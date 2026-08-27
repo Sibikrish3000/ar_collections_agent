@@ -8,8 +8,8 @@ from collections import Counter
 from datetime import date, timedelta
 from decimal import Decimal
 
-from fs_collections_agent import replay_engine
-from fs_collections_agent.models import ActionType, ContactRole, HoldReason
+from ar_collections_agent import replay_engine
+from ar_collections_agent.models import ActionType, ContactRole, HoldReason
 
 LEDGER_DATE = date(2026, 8, 26)
 
