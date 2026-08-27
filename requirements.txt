@@ -1,0 +1,23 @@
+# Pinned dependencies. Python >= 3.13.
+#
+#   python -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements.txt
+#   PYTHONPATH=src python -m fs_collections_agent
+#
+# Or, to get the `fs-collections-agent` console script on your PATH:
+#
+#   pip install -e .        # same pins, resolved from pyproject.toml
+#   fs-collections-agent
+#
+# Runtime: one dependency. Every calculation, date walk and state transition uses
+# the standard library, which is one fewer thing that can break on your machine.
+PyYAML==6.0.2
+
+# Tests (the suite is part of the deliverable).
+pytest==8.4.2
+
+# Optional, for the `--llm` classification pass and `--llm-drafts` rewriting only.
+# Any OpenAI-compatible endpoint works; set LLM_BASE_URL / LLM_API_KEY / LLM_MODEL.
+# Lazily imported: the default run never touches it, and the committed
+# classification cache means a reviewer reproduces the same replay without a key.
+# openai==1.109.1

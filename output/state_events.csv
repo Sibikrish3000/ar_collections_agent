@@ -1,0 +1,467 @@
+date,customer_id,invoice_id,event_type,detail
+2025-03-27,C-04,INV-2128,INVOICE_SETTLED,payment 12816.48 received; balance cleared
+2025-04-02,C-04,INV-2127,INVOICE_SETTLED,payment 10434.60 received; balance cleared
+2025-04-03,C-07,INV-2236,PARTIAL_PAYMENT,received 3145.45; 3145.44 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-04-09,C-07,INV-2236,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-04-17,C-06,INV-2183,INVOICE_SETTLED,payment 31132.65 received; balance cleared
+2025-04-17,C-06,INV-2181,INVOICE_SETTLED,payment 38396.80 received; balance cleared
+2025-04-21,C-09,INV-2289,INVOICE_SETTLED,payment 8395.23 received; balance cleared
+2025-04-22,C-07,INV-2236,INVOICE_SETTLED,payment 3145.44 received; balance cleared
+2025-04-22,C-09,INV-2290,INVOICE_SETTLED,payment 7185.05 received; balance cleared
+2025-04-23,C-03,INV-2091,INVOICE_SETTLED,payment 31314.34 received; balance cleared
+2025-04-24,C-07,INV-2235,PARTIAL_PAYMENT,received 2366.24; 2366.23 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-04-25,C-02,INV-2039,INVOICE_SETTLED,payment 11188.31 received; balance cleared
+2025-04-27,C-01,INV-2001,INVOICE_SETTLED,payment 10265.85 received; balance cleared
+2025-04-27,C-03,INV-2092,INVOICE_SETTLED,payment 35509.97 received; balance cleared
+2025-04-29,C-12,INV-2381,INVOICE_SETTLED,payment 10495.11 received; balance cleared
+2025-04-30,C-07,INV-2235,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-05-03,C-01,INV-2002,INVOICE_SETTLED,payment 19719.20 received; balance cleared
+2025-05-05,C-06,INV-2182,INVOICE_SETTLED,payment 31160.70 received; balance cleared
+2025-05-06,C-07,INV-2235,INVOICE_SETTLED,payment 2366.23 received; balance cleared
+2025-05-07,C-02,INV-2037,INVOICE_SETTLED,payment 11635.08 received; balance cleared
+2025-05-10,C-09,INV-2291,INVOICE_SETTLED,payment 6302.86 received; balance cleared
+2025-05-16,C-06,INV-2185,INVOICE_SETTLED,payment 24831.25 received; balance cleared
+2025-05-17,C-01,INV-2004,INVOICE_SETTLED,payment 10385.68 received; balance cleared
+2025-05-18,C-11,INV-2361,INVOICE_SETTLED,payment 18896.89 received; balance cleared
+2025-05-19,C-12,INV-2379,INVOICE_SETTLED,payment 11007.66 received; balance cleared
+2025-05-19,C-06,INV-2186,INVOICE_SETTLED,payment 26414.59 received; balance cleared
+2025-05-19,C-04,INV-2129,INVOICE_SETTLED,payment 14315.02 received; balance cleared
+2025-05-22,C-10,INV-2326,INVOICE_SETTLED,payment 13870.45 received; balance cleared
+2025-05-22,C-12,INV-2380,INVOICE_SETTLED,payment 11874.33 received; balance cleared
+2025-05-23,C-08,INV-2271,INVOICE_SETTLED,payment 91439.29 received; balance cleared
+2025-05-23,C-07,INV-2237,PARTIAL_PAYMENT,received 2610.76; 2610.75 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-05-23,C-09,INV-2292,INVOICE_SETTLED,payment 4410.78 received; balance cleared
+2025-05-23,C-04,INV-2130,INVOICE_SETTLED,payment 10156.64 received; balance cleared
+2025-05-25,C-02,INV-2038,INVOICE_SETTLED,payment 9752.28 received; balance cleared
+2025-05-27,C-07,INV-2238,INVOICE_SETTLED,payment 7055.87 received; balance cleared
+2025-05-27,C-06,INV-2184,INVOICE_SETTLED,payment 18695.96 received; balance cleared
+2025-05-29,C-02,INV-2040,INVOICE_SETTLED,payment 13771.56 received; balance cleared
+2025-05-29,C-07,INV-2237,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-06-01,C-03,INV-2094,INVOICE_SETTLED,payment 32607.32 received; balance cleared
+2025-06-02,C-10,INV-2325,INVOICE_SETTLED,payment 18601.48 received; balance cleared
+2025-06-03,C-01,INV-2003,INVOICE_SETTLED,payment 21431.80 received; balance cleared
+2025-06-03,C-03,INV-2093,INVOICE_SETTLED,payment 18269.56 received; balance cleared
+2025-06-06,C-07,INV-2237,INVOICE_SETTLED,payment 2610.75 received; balance cleared
+2025-06-08,C-11,INV-2362,INVOICE_SETTLED,payment 32988.84 received; balance cleared
+2025-06-08,C-08,INV-2272,INVOICE_SETTLED,payment 101986.25 received; balance cleared
+2025-06-09,C-04,INV-2131,INVOICE_SETTLED,payment 11126.75 received; balance cleared
+2025-06-12,C-09,INV-2293,INVOICE_SETTLED,payment 5726.81 received; balance cleared
+2025-06-13,C-12,INV-2382,INVOICE_SETTLED,payment 14008.64 received; balance cleared
+2025-06-13,C-09,INV-2294,INVOICE_SETTLED,payment 9222.10 received; balance cleared
+2025-06-14,C-07,INV-2239,INVOICE_SETTLED,payment 6329.80 received; balance cleared
+2025-06-14,C-01,INV-2006,INVOICE_SETTLED,payment 23125.32 received; balance cleared
+2025-06-15,C-06,INV-2188,INVOICE_SETTLED,payment 24475.75 received; balance cleared
+2025-06-16,C-12,INV-2383,INVOICE_SETTLED,payment 11220.95 received; balance cleared
+2025-06-16,C-02,INV-2042,INVOICE_SETTLED,payment 8297.67 received; balance cleared
+2025-06-20,C-02,INV-2041,INVOICE_SETTLED,payment 9996.26 received; balance cleared
+2025-06-21,C-03,INV-2096,INVOICE_SETTLED,payment 39037.51 received; balance cleared
+2025-06-22,C-12,INV-2384,INVOICE_SETTLED,payment 12142.03 received; balance cleared
+2025-06-25,C-04,INV-2132,INVOICE_SETTLED,payment 10141.90 received; balance cleared
+2025-06-26,C-10,INV-2327,INVOICE_SETTLED,payment 18050.37 received; balance cleared
+2025-06-28,C-02,INV-2043,INVOICE_SETTLED,payment 7922.12 received; balance cleared
+2025-06-28,C-03,INV-2095,INVOICE_SETTLED,payment 39364.78 received; balance cleared
+2025-06-30,C-01,INV-2005,INVOICE_SETTLED,payment 21456.90 received; balance cleared
+2025-07-01,C-10,INV-2328,INVOICE_SETTLED,payment 16618.21 received; balance cleared
+2025-07-01,C-06,INV-2187,INVOICE_SETTLED,payment 31191.01 received; balance cleared
+2025-07-01,C-04,INV-2134,INVOICE_SETTLED,payment 17088.95 received; balance cleared
+2025-07-05,C-07,INV-2240,PARTIAL_PAYMENT,received 3123.64; 3123.64 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-07-08,C-12,INV-2385,INVOICE_SETTLED,payment 10806.37 received; balance cleared
+2025-07-08,C-06,INV-2189,INVOICE_SETTLED,payment 29575.83 received; balance cleared
+2025-07-08,C-04,INV-2133,INVOICE_SETTLED,payment 11407.12 received; balance cleared
+2025-07-11,C-02,INV-2044,INVOICE_SETTLED,payment 10401.70 received; balance cleared
+2025-07-11,C-07,INV-2240,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-07-12,C-08,INV-2273,INVOICE_SETTLED,payment 68403.65 received; balance cleared
+2025-07-13,C-06,INV-2192,INVOICE_SETTLED,payment 35894.75 received; balance cleared
+2025-07-17,C-12,INV-2387,INVOICE_SETTLED,payment 6404.08 received; balance cleared
+2025-07-17,C-12,INV-2386,INVOICE_SETTLED,payment 11096.62 received; balance cleared
+2025-07-18,C-01,INV-2008,INVOICE_SETTLED,payment 12922.34 received; balance cleared
+2025-07-18,C-09,INV-2296,INVOICE_SETTLED,payment 7611.71 received; balance cleared
+2025-07-19,C-07,INV-2240,INVOICE_SETTLED,payment 3123.64 received; balance cleared
+2025-07-19,C-09,INV-2295,INVOICE_SETTLED,payment 6198.12 received; balance cleared
+2025-07-22,C-11,INV-2363,INVOICE_SETTLED,payment 13768.09 received; balance cleared
+2025-07-23,C-02,INV-2045,INVOICE_SETTLED,payment 5392.58 received; balance cleared
+2025-07-25,C-06,INV-2190,INVOICE_SETTLED,payment 24694.78 received; balance cleared
+2025-07-25,C-07,INV-2241,PARTIAL_PAYMENT,received 3475.36; 3475.35 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-07-26,C-03,INV-2098,INVOICE_SETTLED,payment 35057.75 received; balance cleared
+2025-07-28,C-03,INV-2097,INVOICE_SETTLED,payment 28813.80 received; balance cleared
+2025-07-28,C-07,INV-2242,PARTIAL_PAYMENT,received 3194.62; 3194.62 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-07-29,C-02,INV-2046,INVOICE_SETTLED,payment 6363.09 received; balance cleared
+2025-07-30,C-10,INV-2330,INVOICE_SETTLED,payment 15184.14 received; balance cleared
+2025-07-31,C-07,INV-2241,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-08-01,C-01,INV-2007,INVOICE_SETTLED,payment 21295.95 received; balance cleared
+2025-08-02,C-07,INV-2241,INVOICE_SETTLED,payment 3475.35 received; balance cleared
+2025-08-03,C-07,INV-2242,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-08-04,C-05,INV-2164,INVOICE_SETTLED,payment 353.41 received; balance cleared
+2025-08-05,C-06,INV-2191,INVOICE_SETTLED,payment 29299.76 received; balance cleared
+2025-08-06,C-07,INV-2242,INVOICE_SETTLED,payment 3194.62 received; balance cleared
+2025-08-07,C-02,INV-2048,INVOICE_SETTLED,payment 6488.29 received; balance cleared
+2025-08-10,C-09,INV-2298,INVOICE_SETTLED,payment 8096.17 received; balance cleared
+2025-08-11,C-05,INV-2163,INVOICE_SETTLED,payment 318.53 received; balance cleared
+2025-08-11,C-02,INV-2047,INVOICE_SETTLED,payment 7909.42 received; balance cleared
+2025-08-11,C-12,INV-2388,INVOICE_SETTLED,payment 11691.61 received; balance cleared
+2025-08-12,C-04,INV-2136,INVOICE_SETTLED,payment 10534.39 received; balance cleared
+2025-08-14,C-10,INV-2329,INVOICE_SETTLED,payment 11203.95 received; balance cleared
+2025-08-14,C-11,INV-2364,INVOICE_SETTLED,payment 8313.03 received; balance cleared
+2025-08-14,C-06,INV-2194,INVOICE_SETTLED,payment 32959.98 received; balance cleared
+2025-08-16,C-06,INV-2193,INVOICE_SETTLED,payment 22793.27 received; balance cleared
+2025-08-17,C-09,INV-2297,INVOICE_SETTLED,payment 8531.69 received; balance cleared
+2025-08-19,C-03,INV-2099,INVOICE_SETTLED,payment 31109.64 received; balance cleared
+2025-08-20,C-07,INV-2243,INVOICE_SETTLED,payment 7726.89 received; balance cleared
+2025-08-20,C-01,INV-2010,INVOICE_SETTLED,payment 19574.73 received; balance cleared
+2025-08-22,C-04,INV-2135,INVOICE_SETTLED,payment 12382.84 received; balance cleared
+2025-08-23,C-12,INV-2389,INVOICE_SETTLED,payment 12522.04 received; balance cleared
+2025-08-24,C-12,INV-2390,INVOICE_SETTLED,payment 12550.72 received; balance cleared
+2025-08-25,C-01,INV-2009,INVOICE_SETTLED,payment 21366.82 received; balance cleared
+2025-08-26,C-07,INV-2244,INVOICE_SETTLED,payment 4935.17 received; balance cleared
+2025-08-27,C-08,INV-2274,INVOICE_SETTLED,payment 97507.47 received; balance cleared
+2025-08-31,C-02,INV-2049,INVOICE_SETTLED,payment 9668.66 received; balance cleared
+2025-09-01,C-03,INV-2100,INVOICE_SETTLED,payment 42907.90 received; balance cleared
+2025-09-03,C-09,INV-2300,INVOICE_SETTLED,payment 8109.64 received; balance cleared
+2025-09-08,C-12,INV-2391,INVOICE_SETTLED,payment 11959.69 received; balance cleared
+2025-09-08,C-02,INV-2050,INVOICE_SETTLED,payment 10456.52 received; balance cleared
+2025-09-09,C-10,INV-2332,INVOICE_SETTLED,payment 9747.84 received; balance cleared
+2025-09-11,C-10,INV-2333,INVOICE_SETTLED,payment 14376.46 received; balance cleared
+2025-09-11,C-08,INV-2275,INVOICE_SETTLED,payment 89095.43 received; balance cleared
+2025-09-12,C-10,INV-2331,INVOICE_SETTLED,payment 19087.28 received; balance cleared
+2025-09-12,C-06,INV-2195,INVOICE_SETTLED,payment 34815.39 received; balance cleared
+2025-09-12,C-09,INV-2299,INVOICE_SETTLED,payment 6468.88 received; balance cleared
+2025-09-13,C-12,INV-2393,INVOICE_SETTLED,payment 11689.76 received; balance cleared
+2025-09-16,C-05,INV-2165,INVOICE_SETTLED,payment 261.72 received; balance cleared
+2025-09-16,C-02,INV-2051,INVOICE_SETTLED,payment 11094.38 received; balance cleared
+2025-09-16,C-11,INV-2365,INVOICE_SETTLED,payment 27070.90 received; balance cleared
+2025-09-16,C-04,INV-2138,INVOICE_SETTLED,payment 10326.43 received; balance cleared
+2025-09-17,C-06,INV-2198,INVOICE_SETTLED,payment 30457.27 received; balance cleared
+2025-09-18,C-07,INV-2245,PARTIAL_PAYMENT,received 3139.43; 3139.43 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-09-20,C-06,INV-2197,INVOICE_SETTLED,payment 30182.52 received; balance cleared
+2025-09-23,C-12,INV-2392,INVOICE_SETTLED,payment 13133.01 received; balance cleared
+2025-09-24,C-07,INV-2245,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2025-09-27,C-04,INV-2137,INVOICE_SETTLED,payment 13932.72 received; balance cleared
+2025-09-28,C-02,INV-2053,INVOICE_SETTLED,payment 10589.54 received; balance cleared
+2025-09-28,C-03,INV-2102,INVOICE_SETTLED,payment 15993.54 received; balance cleared
+2025-09-29,C-07,INV-2246,INVOICE_SETTLED,payment 6593.55 received; balance cleared
+2025-09-29,C-01,INV-2011,INVOICE_SETTLED,payment 17479.13 received; balance cleared
+2025-09-30,C-06,INV-2196,INVOICE_SETTLED,payment 26892.08 received; balance cleared
+2025-09-30,C-09,INV-2301,INVOICE_SETTLED,payment 7030.03 received; balance cleared
+2025-10-03,C-10,INV-2334,INVOICE_SETTLED,payment 18579.77 received; balance cleared
+2025-10-03,C-07,INV-2245,INVOICE_SETTLED,payment 3139.43 received; balance cleared
+2025-10-04,C-02,INV-2052,INVOICE_SETTLED,payment 10240.26 received; balance cleared
+2025-10-05,C-03,INV-2101,INVOICE_SETTLED,payment 46366.61 received; balance cleared
+2025-10-06,C-12,INV-2394,INVOICE_SETTLED,payment 8891.26 received; balance cleared
+2025-10-06,C-02,INV-2054,INVOICE_SETTLED,payment 8474.04 received; balance cleared
+2025-10-10,C-01,INV-2012,INVOICE_SETTLED,payment 17118.85 received; balance cleared
+2025-10-11,C-08,INV-2276,INVOICE_SETTLED,payment 107908.20 received; balance cleared
+2025-10-17,C-06,INV-2201,INVOICE_SETTLED,payment 27375.41 received; balance cleared
+2025-10-20,C-04,INV-2139,INVOICE_SETTLED,payment 15414.46 received; balance cleared
+2025-10-22,C-12,INV-2396,INVOICE_SETTLED,payment 13165.31 received; balance cleared
+2025-10-22,C-11,INV-2366,INVOICE_SETTLED,payment 18678.80 received; balance cleared
+2025-10-22,C-09,INV-2302,INVOICE_SETTLED,payment 9220.98 received; balance cleared
+2025-10-24,C-03,INV-2103,INVOICE_SETTLED,payment 37145.83 received; balance cleared
+2025-10-25,C-06,INV-2199,INVOICE_SETTLED,payment 26352.93 received; balance cleared
+2025-10-26,C-12,INV-2395,INVOICE_SETTLED,payment 12102.02 received; balance cleared
+2025-10-27,C-02,INV-2056,INVOICE_SETTLED,payment 9273.60 received; balance cleared
+2025-10-27,C-02,INV-2057,INVOICE_SETTLED,payment 7232.24 received; balance cleared
+2025-10-28,C-04,INV-2140,INVOICE_SETTLED,payment 14847.93 received; balance cleared
+2025-10-30,C-10,INV-2336,INVOICE_SETTLED,payment 9914.37 received; balance cleared
+2025-11-03,C-07,INV-2248,INVOICE_SETTLED,payment 5298.50 received; balance cleared
+2025-11-04,C-06,INV-2200,INVOICE_SETTLED,payment 27919.78 received; balance cleared
+2025-11-06,C-12,INV-2397,INVOICE_SETTLED,payment 14267.10 received; balance cleared
+2025-11-06,C-07,INV-2247,INVOICE_SETTLED,payment 4677.76 received; balance cleared
+2025-11-07,C-01,INV-2014,INVOICE_SETTLED,payment 20130.87 received; balance cleared
+2025-11-07,C-01,INV-2013,INVOICE_SETTLED,payment 19086.01 received; balance cleared
+2025-11-08,C-03,INV-2104,INVOICE_SETTLED,payment 34305.51 received; balance cleared
+2025-11-08,C-09,INV-2304,INVOICE_SETTLED,payment 7893.58 received; balance cleared
+2025-11-10,C-05,INV-2166,INVOICE_SETTLED,payment 273.00 received; balance cleared
+2025-11-11,C-10,INV-2335,INVOICE_SETTLED,payment 9656.12 received; balance cleared
+2025-11-11,C-11,INV-2367,INVOICE_SETTLED,payment 26100.59 received; balance cleared
+2025-11-15,C-02,INV-2055,INVOICE_SETTLED,payment 10693.50 received; balance cleared
+2025-11-15,C-04,INV-2141,INVOICE_SETTLED,payment 9500.02 received; balance cleared
+2025-11-19,C-05,INV-2167,INVOICE_SETTLED,payment 412.64 received; balance cleared
+2025-11-22,C-04,INV-2142,INVOICE_SETTLED,payment 9265.17 received; balance cleared
+2025-11-24,C-03,INV-2106,INVOICE_SETTLED,payment 35950.56 received; balance cleared
+2025-11-25,C-12,INV-2398,INVOICE_SETTLED,payment 12142.21 received; balance cleared
+2025-11-25,C-01,INV-2016,INVOICE_SETTLED,payment 25294.50 received; balance cleared
+2025-11-26,C-08,INV-2277,INVOICE_SETTLED,payment 94992.97 received; balance cleared
+2025-11-26,C-09,INV-2303,INVOICE_SETTLED,payment 10090.80 received; balance cleared
+2025-11-26,C-09,INV-2306,INVOICE_SETTLED,payment 5633.82 received; balance cleared
+2025-11-27,C-12,INV-2399,INVOICE_SETTLED,payment 5652.84 received; balance cleared
+2025-11-28,C-06,INV-2202,INVOICE_SETTLED,payment 27815.21 received; balance cleared
+2025-11-29,C-10,INV-2338,INVOICE_SETTLED,payment 12727.84 received; balance cleared
+2025-11-29,C-03,INV-2105,INVOICE_SETTLED,payment 27522.31 received; balance cleared
+2025-12-03,C-06,INV-2203,INVOICE_SETTLED,payment 28016.93 received; balance cleared
+2025-12-05,C-06,INV-2204,INVOICE_SETTLED,payment 21406.36 received; balance cleared
+2025-12-07,C-12,INV-2403,INVOICE_SETTLED,payment 9572.95 received; balance cleared
+2025-12-08,C-02,INV-2058,INVOICE_SETTLED,payment 7462.50 received; balance cleared
+2025-12-08,C-01,INV-2015,INVOICE_SETTLED,payment 18180.82 received; balance cleared
+2025-12-09,C-11,INV-2368,INVOICE_SETTLED,payment 28819.04 received; balance cleared
+2025-12-10,C-12,INV-2401,INVOICE_SETTLED,payment 13702.86 received; balance cleared
+2025-12-11,C-07,INV-2250,INVOICE_SETTLED,payment 7687.95 received; balance cleared
+2025-12-12,C-10,INV-2337,INVOICE_SETTLED,payment 17167.66 received; balance cleared
+2025-12-16,C-09,INV-2305,INVOICE_SETTLED,payment 7636.27 received; balance cleared
+2025-12-18,C-06,INV-2205,INVOICE_SETTLED,payment 24618.72 received; balance cleared
+2025-12-19,C-12,INV-2404,INVOICE_SETTLED,payment 13518.62 received; balance cleared
+2025-12-20,C-02,INV-2060,INVOICE_SETTLED,payment 8046.28 received; balance cleared
+2025-12-21,C-12,INV-2400,INVOICE_SETTLED,payment 10063.94 received; balance cleared
+2025-12-21,C-07,INV-2249,INVOICE_SETTLED,payment 3846.36 received; balance cleared
+2025-12-21,C-03,INV-2107,INVOICE_SETTLED,payment 24019.78 received; balance cleared
+2025-12-22,C-01,INV-2018,INVOICE_SETTLED,payment 14212.88 received; balance cleared
+2025-12-24,C-02,INV-2059,INVOICE_SETTLED,payment 13816.70 received; balance cleared
+2025-12-25,C-06,INV-2207,INVOICE_SETTLED,payment 19073.61 received; balance cleared
+2025-12-26,C-08,INV-2278,INVOICE_SETTLED,payment 83654.21 received; balance cleared
+2025-12-27,C-07,INV-2251,PARTIAL_PAYMENT,received 2827.05; 2827.05 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2025-12-28,C-12,INV-2402,INVOICE_SETTLED,payment 12691.68 received; balance cleared
+2025-12-28,C-12,INV-2405,INVOICE_SETTLED,payment 8196.78 received; balance cleared
+2025-12-29,C-06,INV-2206,INVOICE_SETTLED,payment 29273.63 received; balance cleared
+2025-12-30,C-01,INV-2017,INVOICE_SETTLED,payment 17232.72 received; balance cleared
+2025-12-31,C-05,INV-2168,INVOICE_SETTLED,payment 383.22 received; balance cleared
+2026-01-01,C-12,INV-2406,INVOICE_SETTLED,payment 13088.20 received; balance cleared
+2026-01-02,C-07,INV-2251,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-01-03,C-03,INV-2108,INVOICE_SETTLED,payment 39505.85 received; balance cleared
+2026-01-06,C-10,INV-2340,INVOICE_SETTLED,payment 15680.07 received; balance cleared
+2026-01-06,C-08,INV-2279,INVOICE_SETTLED,payment 77053.88 received; balance cleared
+2026-01-06,C-02,INV-2061,INVOICE_SETTLED,payment 10208.15 received; balance cleared
+2026-01-08,C-10,INV-2339,INVOICE_SETTLED,payment 13659.64 received; balance cleared
+2026-01-08,C-07,INV-2251,INVOICE_SETTLED,payment 2827.05 received; balance cleared
+2026-01-10,C-11,INV-2369,INVOICE_SETTLED,payment 19180.39 received; balance cleared
+2026-01-10,C-07,INV-2252,PARTIAL_PAYMENT,received 2666.39; 2666.40 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-01-13,C-06,INV-2209,INVOICE_SETTLED,payment 31252.64 received; balance cleared
+2026-01-14,C-02,INV-2063,INVOICE_SETTLED,payment 9403.97 received; balance cleared
+2026-01-15,C-05,INV-2169,INVOICE_SETTLED,payment 386.71 received; balance cleared
+2026-01-16,C-07,INV-2252,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-01-17,C-06,INV-2210,INVOICE_SETTLED,payment 37034.72 received; balance cleared
+2026-01-20,C-03,INV-2109,INVOICE_SETTLED,payment 14892.59 received; balance cleared
+2026-01-20,C-09,INV-2308,INVOICE_SETTLED,payment 7519.37 received; balance cleared
+2026-01-20,C-09,INV-2307,INVOICE_SETTLED,payment 8665.93 received; balance cleared
+2026-01-22,C-07,INV-2252,INVOICE_SETTLED,payment 2666.40 received; balance cleared
+2026-01-23,C-02,INV-2062,INVOICE_SETTLED,payment 8462.88 received; balance cleared
+2026-01-23,C-12,INV-2407,INVOICE_SETTLED,payment 11249.41 received; balance cleared
+2026-01-24,C-01,INV-2020,INVOICE_SETTLED,payment 18182.37 received; balance cleared
+2026-01-26,C-04,INV-2144,INVOICE_SETTLED,payment 14889.22 received; balance cleared
+2026-01-27,C-07,INV-2253,PARTIAL_PAYMENT,received 2983.86; 2983.86 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-01-28,C-12,INV-2408,INVOICE_SETTLED,payment 13519.67 received; balance cleared
+2026-01-31,C-01,INV-2019,INVOICE_SETTLED,payment 17268.75 received; balance cleared
+2026-02-01,C-04,INV-2143,INVOICE_SETTLED,payment 9766.48 received; balance cleared
+2026-02-02,C-07,INV-2253,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-02-03,C-09,INV-2310,INVOICE_SETTLED,payment 8290.17 received; balance cleared
+2026-02-04,C-10,INV-2341,INVOICE_SETTLED,payment 16994.17 received; balance cleared
+2026-02-04,C-12,INV-2409,INVOICE_SETTLED,payment 14573.56 received; balance cleared
+2026-02-06,C-08,INV-2280,INVOICE_SETTLED,payment 75332.71 received; balance cleared
+2026-02-08,C-07,INV-2253,INVOICE_SETTLED,payment 2983.86 received; balance cleared
+2026-02-08,C-07,INV-2255,PARTIAL_PAYMENT,received 3015.72; 3015.71 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-02-08,C-12,INV-2411,INVOICE_SETTLED,payment 12045.50 received; balance cleared
+2026-02-09,C-10,INV-2342,INVOICE_SETTLED,payment 19249.14 received; balance cleared
+2026-02-09,C-07,INV-2254,INVOICE_SETTLED,payment 6050.67 received; balance cleared
+2026-02-09,C-06,INV-2208,INVOICE_SETTLED,payment 22406.39 received; balance cleared
+2026-02-12,C-11,INV-2370,INVOICE_SETTLED,payment 24915.24 received; balance cleared
+2026-02-12,C-02,INV-2066,INVOICE_SETTLED,payment 9329.88 received; balance cleared
+2026-02-13,C-04,INV-2146,INVOICE_SETTLED,payment 8321.31 received; balance cleared
+2026-02-13,C-03,INV-2110,INVOICE_SETTLED,payment 39029.86 received; balance cleared
+2026-02-14,C-07,INV-2255,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-02-15,C-06,INV-2213,INVOICE_SETTLED,payment 24709.43 received; balance cleared
+2026-02-20,C-02,INV-2064,INVOICE_SETTLED,payment 7905.16 received; balance cleared
+2026-02-21,C-06,INV-2212,INVOICE_SETTLED,payment 31850.99 received; balance cleared
+2026-02-21,C-07,INV-2255,INVOICE_SETTLED,payment 3015.71 received; balance cleared
+2026-02-22,C-02,INV-2065,INVOICE_SETTLED,payment 11506.10 received; balance cleared
+2026-02-22,C-01,INV-2021,INVOICE_SETTLED,payment 21130.98 received; balance cleared
+2026-02-23,C-02,INV-2069,INVOICE_SETTLED,payment 10248.79 received; balance cleared
+2026-02-24,C-12,INV-2410,INVOICE_SETTLED,payment 10593.56 received; balance cleared
+2026-02-24,C-09,INV-2309,INVOICE_SETTLED,payment 5997.90 received; balance cleared
+2026-02-25,C-03,INV-2111,INVOICE_SETTLED,payment 32137.95 received; balance cleared
+2026-02-27,C-10,INV-2344,INVOICE_SETTLED,payment 24578.30 received; balance cleared
+2026-03-02,C-02,INV-2068,INVOICE_SETTLED,payment 8257.88 received; balance cleared
+2026-03-02,C-07,INV-2256,PARTIAL_PAYMENT,received 4827.84; 4827.83 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-03-02,C-12,INV-2412,INVOICE_SETTLED,payment 10020.83 received; balance cleared
+2026-03-05,C-09,INV-2311,INVOICE_SETTLED,payment 9235.08 received; balance cleared
+2026-03-06,C-01,INV-2022,INVOICE_SETTLED,payment 17846.34 received; balance cleared
+2026-03-06,C-12,INV-2413,INVOICE_SETTLED,payment 8086.29 received; balance cleared
+2026-03-07,C-03,INV-2112,INVOICE_SETTLED,payment 34928.49 received; balance cleared
+2026-03-08,C-08,INV-2281,INVOICE_SETTLED,payment 114256.24 received; balance cleared
+2026-03-08,C-02,INV-2067,INVOICE_SETTLED,payment 11889.26 received; balance cleared
+2026-03-08,C-07,INV-2256,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-03-10,C-05,INV-2170,INVOICE_SETTLED,payment 277.23 received; balance cleared
+2026-03-10,C-10,INV-2343,INVOICE_SETTLED,payment 9789.82 received; balance cleared
+2026-03-10,C-06,INV-2211,INVOICE_SETTLED,payment 32766.56 received; balance cleared
+2026-03-10,C-09,INV-2312,INVOICE_SETTLED,payment 8175.45 received; balance cleared
+2026-03-17,C-07,INV-2257,INVOICE_SETTLED,payment 6652.33 received; balance cleared
+2026-03-18,C-07,INV-2256,INVOICE_SETTLED,payment 4827.83 received; balance cleared
+2026-03-18,C-01,INV-2023,INVOICE_SETTLED,payment 9989.47 received; balance cleared
+2026-03-20,C-12,INV-2414,INVOICE_SETTLED,payment 12327.28 received; balance cleared
+2026-03-20,C-04,INV-2150,INVOICE_SETTLED,payment 13070.44 received; balance cleared
+2026-03-23,C-04,INV-2145,INVOICE_SETTLED,payment 16833.75 received; balance cleared
+2026-03-24,C-06,INV-2214,INVOICE_SETTLED,payment 20845.03 received; balance cleared
+2026-03-25,C-05,INV-2171,INVOICE_SETTLED,payment 350.89 received; balance cleared
+2026-03-27,C-11,INV-2372,INVOICE_SETTLED,payment 24151.05 received; balance cleared
+2026-03-30,C-11,INV-2371,INVOICE_SETTLED,payment 23717.43 received; balance cleared
+2026-03-30,C-04,INV-2149,INVOICE_SETTLED,payment 6728.01 received; balance cleared
+2026-04-01,C-12,INV-2415,INVOICE_SETTLED,payment 10796.40 received; balance cleared
+2026-04-01,C-09,INV-2314,INVOICE_SETTLED,payment 6831.44 received; balance cleared
+2026-04-03,C-02,INV-2071,INVOICE_SETTLED,payment 10319.68 received; balance cleared
+2026-04-03,C-06,INV-2216,INVOICE_SETTLED,payment 18964.37 received; balance cleared
+2026-04-04,C-08,INV-2282,INVOICE_SETTLED,payment 80065.78 received; balance cleared
+2026-04-05,C-04,INV-2147,INVOICE_SETTLED,payment 10948.42 received; balance cleared
+2026-04-06,C-04,INV-2148,INVOICE_SETTLED,payment 9462.81 received; balance cleared
+2026-04-07,C-06,INV-2215,INVOICE_SETTLED,payment 31303.89 received; balance cleared
+2026-04-08,C-10,INV-2346,INVOICE_SETTLED,payment 17726.28 received; balance cleared
+2026-04-08,C-07,INV-2258,INVOICE_SETTLED,payment 7028.79 received; balance cleared
+2026-04-11,C-06,INV-2219,INVOICE_SETTLED,payment 28649.63 received; balance cleared
+2026-04-12,C-10,INV-2345,INVOICE_SETTLED,payment 15529.14 received; balance cleared
+2026-04-12,C-01,INV-2024,INVOICE_SETTLED,payment 14477.63 received; balance cleared
+2026-04-13,C-12,INV-2416,INVOICE_SETTLED,payment 12322.23 received; balance cleared
+2026-04-16,C-02,INV-2070,INVOICE_SETTLED,payment 8659.09 received; balance cleared
+2026-04-17,C-07,INV-2259,PARTIAL_PAYMENT,received 2880.82; 2880.82 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-04-19,C-02,INV-2072,INVOICE_SETTLED,payment 7367.32 received; balance cleared
+2026-04-19,C-01,INV-2025,INVOICE_SETTLED,payment 20512.70 received; balance cleared
+2026-04-19,C-01,INV-2026,INVOICE_SETTLED,payment 15850.81 received; balance cleared
+2026-04-19,C-04,INV-2152,INVOICE_SETTLED,payment 12242.55 received; balance cleared
+2026-04-19,C-09,INV-2313,INVOICE_SETTLED,payment 7714.16 received; balance cleared
+2026-04-22,C-06,INV-2217,INVOICE_SETTLED,payment 23312.90 received; balance cleared
+2026-04-23,C-12,INV-2417,INVOICE_SETTLED,payment 16543.36 received; balance cleared
+2026-04-23,C-07,INV-2259,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-04-25,C-05,INV-2172,INVOICE_SETTLED,payment 415.35 received; balance cleared
+2026-04-25,C-07,INV-2259,INVOICE_SETTLED,payment 2880.82 received; balance cleared
+2026-04-27,C-04,INV-2151,INVOICE_SETTLED,payment 10428.64 received; balance cleared
+2026-04-28,C-10,INV-2347,INVOICE_SETTLED,payment 21201.82 received; balance cleared
+2026-04-30,C-06,INV-2218,INVOICE_SETTLED,payment 29602.31 received; balance cleared
+2026-05-01,C-12,INV-2419,INVOICE_SETTLED,payment 9239.38 received; balance cleared
+2026-05-03,C-03,INV-2113,INVOICE_SETTLED,payment 15113.26 received; balance cleared
+2026-05-05,C-10,INV-2348,INVOICE_SETTLED,payment 15377.51 received; balance cleared
+2026-05-05,C-02,INV-2074,INVOICE_SETTLED,payment 7551.38 received; balance cleared
+2026-05-09,C-02,INV-2073,INVOICE_SETTLED,payment 8859.68 received; balance cleared
+2026-05-10,C-07,INV-2262,PARTIAL_PAYMENT,received 4191.61; 4191.62 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-05-11,C-08,INV-2283,INVOICE_SETTLED,payment 62703.00 received; balance cleared
+2026-05-15,C-02,INV-2075,INVOICE_SETTLED,payment 11724.82 received; balance cleared
+2026-05-15,C-01,INV-2027,INVOICE_SETTLED,payment 13384.52 received; balance cleared
+2026-05-15,C-12,INV-2420,INVOICE_SETTLED,payment 8942.71 received; balance cleared
+2026-05-16,C-07,INV-2260,INVOICE_SETTLED,payment 3091.23 received; balance cleared
+2026-05-16,C-12,INV-2418,INVOICE_SETTLED,payment 9450.31 received; balance cleared
+2026-05-16,C-07,INV-2262,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-05-17,C-09,INV-2315,INVOICE_SETTLED,payment 4317.01 received; balance cleared
+2026-05-17,C-04,INV-2153,INVOICE_SETTLED,payment 12725.02 received; balance cleared
+2026-05-18,C-01,INV-2028,INVOICE_SETTLED,payment 20149.78 received; balance cleared
+2026-05-19,C-06,INV-2222,INVOICE_SETTLED,payment 34566.16 received; balance cleared
+2026-05-19,C-06,INV-2221,INVOICE_SETTLED,payment 29484.56 received; balance cleared
+2026-05-20,C-03,INV-2114,INVOICE_SETTLED,payment 37523.75 received; balance cleared
+2026-05-20,C-04,INV-2154,INVOICE_SETTLED,payment 12558.48 received; balance cleared
+2026-05-21,C-10,INV-2349,INVOICE_SETTLED,payment 21334.29 received; balance cleared
+2026-05-21,C-11,INV-2373,INVOICE_SETTLED,payment 22238.39 received; balance cleared
+2026-05-21,C-09,INV-2316,INVOICE_SETTLED,payment 8129.55 received; balance cleared
+2026-05-22,C-07,INV-2261,INVOICE_SETTLED,payment 7267.07 received; balance cleared
+2026-05-23,C-06,INV-2220,INVOICE_SETTLED,payment 41969.05 received; balance cleared
+2026-05-27,C-08,INV-2284,INVOICE_SETTLED,payment 109411.78 received; balance cleared
+2026-05-28,C-07,INV-2262,INVOICE_SETTLED,payment 4191.62 received; balance cleared
+2026-05-30,C-04,INV-2155,INVOICE_SETTLED,payment 13205.31 received; balance cleared
+2026-05-31,C-05,INV-2173,INVOICE_SETTLED,payment 339.10 received; balance cleared
+2026-06-03,C-10,INV-2350,INVOICE_SETTLED,payment 14087.92 received; balance cleared
+2026-06-06,C-09,INV-2317,INVOICE_SETTLED,payment 6376.34 received; balance cleared
+2026-06-07,C-11,INV-2374,INVOICE_SETTLED,payment 13176.79 received; balance cleared
+2026-06-11,C-02,INV-2078,INVOICE_SETTLED,payment 8024.29 received; balance cleared
+2026-06-11,C-12,INV-2422,INVOICE_SETTLED,payment 10668.18 received; balance cleared
+2026-06-12,C-02,INV-2076,INVOICE_SETTLED,payment 6477.99 received; balance cleared
+2026-06-16,C-03,INV-2115,INVOICE_SETTLED,payment 22789.82 received; balance cleared
+2026-06-17,C-02,INV-2077,INVOICE_SETTLED,payment 10350.79 received; balance cleared
+2026-06-19,C-04,INV-2156,INVOICE_SETTLED,payment 13913.78 received; balance cleared
+2026-06-20,C-03,INV-2116,INVOICE_SETTLED,payment 33974.70 received; balance cleared
+2026-06-20,C-07,INV-2264,INVOICE_SETTLED,payment 6391.06 received; balance cleared
+2026-06-21,C-01,INV-2029,INVOICE_SETTLED,payment 13148.70 received; balance cleared
+2026-06-24,C-06,INV-2225,INVOICE_SETTLED,payment 34886.81 received; balance cleared
+2026-06-24,C-12,INV-2423,INVOICE_SETTLED,payment 5257.62 received; balance cleared
+2026-06-25,C-09,INV-2318,INVOICE_SETTLED,payment 5645.89 received; balance cleared
+2026-06-26,C-06,INV-2223,INVOICE_SETTLED,payment 25683.85 received; balance cleared
+2026-06-26,C-06,INV-2224,INVOICE_SETTLED,payment 26696.50 received; balance cleared
+2026-06-27,C-12,INV-2421,INVOICE_SETTLED,payment 13954.85 received; balance cleared
+2026-06-28,C-02,INV-2081,INVOICE_SETTLED,payment 7220.16 received; balance cleared
+2026-06-30,C-07,INV-2263,PARTIAL_PAYMENT,received 2269.55; 2269.55 outstanding; PAYMENT_IN_FLIGHT hold for 5d
+2026-07-01,C-02,INV-2080,INVOICE_SETTLED,payment 5954.35 received; balance cleared
+2026-07-01,C-12,INV-2426,INVOICE_SETTLED,payment 9254.16 received; balance cleared
+2026-07-04,C-09,INV-2319,INVOICE_SETTLED,payment 10772.02 received; balance cleared
+2026-07-06,C-03,INV-2117,INVOICE_SETTLED,payment 28500.06 received; balance cleared
+2026-07-06,C-07,INV-2263,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-07-07,C-02,INV-2079,INVOICE_SETTLED,payment 7684.55 received; balance cleared
+2026-07-07,C-04,INV-2158,INVOICE_SETTLED,payment 13323.22 received; balance cleared
+2026-07-07,C-12,INV-2424,INVOICE_SETTLED,payment 8683.72 received; balance cleared
+2026-07-08,C-05,INV-2174,INVOICE_SETTLED,payment 412.65 received; balance cleared
+2026-07-08,C-10,INV-2352,INVOICE_SETTLED,payment 19961.63 received; balance cleared
+2026-07-09,C-01,INV-2030,INVOICE_SETTLED,payment 21352.59 received; balance cleared
+2026-07-10,C-10,INV-2351,INVOICE_SETTLED,payment 11976.02 received; balance cleared
+2026-07-12,C-04,INV-2157,INVOICE_SETTLED,payment 8828.08 received; balance cleared
+2026-07-13,C-07,INV-2263,INVOICE_SETTLED,payment 2269.55 received; balance cleared
+2026-07-16,C-09,INV-2320,INVOICE_SETTLED,payment 5400.80 received; balance cleared
+2026-07-18,C-11,INV-2375,INVOICE_SETTLED,payment 23713.53 received; balance cleared
+2026-07-20,C-12,INV-2425,INVOICE_SETTLED,payment 13649.71 received; balance cleared
+2026-07-21,C-01,INV-2032,INVOICE_SETTLED,payment 15467.16 received; balance cleared
+2026-07-23,C-05,INV-2175,INVOICE_SETTLED,payment 272.39 received; balance cleared
+2026-07-25,C-06,INV-2227,INVOICE_SETTLED,payment 20923.92 received; balance cleared
+2026-07-25,C-06,INV-2228,INVOICE_SETTLED,payment 30079.26 received; balance cleared
+2026-07-26,C-08,INV-2285,INVOICE_SETTLED,payment 74675.47 received; balance cleared
+2026-07-27,C-03,INV-2118,INVOICE_SETTLED,payment 29011.08 received; balance cleared
+2026-07-28,C-06,INV-2226,INVOICE_SETTLED,payment 24585.87 received; balance cleared
+2026-07-28,C-07,INV-2266,INVOICE_SETTLED,payment 7733.98 received; balance cleared
+2026-08-01,C-11,INV-2376,INVOICE_SETTLED,payment 14302.91 received; balance cleared
+2026-08-01,C-01,INV-2031,INVOICE_SETTLED,payment 19076.44 received; balance cleared
+2026-08-02,C-07,INV-2265,INVOICE_SETTLED,payment 8015.73 received; balance cleared
+2026-08-03,C-10,INV-2353,INVOICE_SETTLED,payment 15128.58 received; balance cleared
+2026-08-06,C-03,INV-2120,INVOICE_SETTLED,payment 29487.59 received; balance cleared
+2026-08-11,C-09,INV-2322,INVOICE_SETTLED,payment 6955.27 received; balance cleared
+2026-08-11,C-04,INV-2159,INVOICE_SETTLED,payment 11263.04 received; balance cleared
+2026-08-11,C-06,INV-2231,INVOICE_SETTLED,payment 34354.30 received; balance cleared
+2026-08-12,C-06,INV-2230,INVOICE_SETTLED,payment 33635.15 received; balance cleared
+2026-08-12,C-03,INV-2121,REPLY_RECEIVED,"15_reply.txt -> PROMISE_TO_PAY (conf 0.97, engine llm)"
+2026-08-12,C-03,INV-2121,HOLD_SET,PROMISE_TO_PAY until 2026-08-31 - promised 2026-08-29 (+2d grace)
+2026-08-13,C-02,INV-2082,INVOICE_SETTLED,payment 14060.35 received; balance cleared
+2026-08-13,C-05,INV-2178,REPLY_RECEIVED,"14_reply.txt -> PAYMENT_PLAN_REQUEST (conf 0.97, engine llm)"
+2026-08-13,C-05,INV-2178,HOLD_SET,PAYMENT_PLAN_PENDING until 2026-08-23 - customer requested a payment plan; agreement needs a human
+2026-08-14,C-04,INV-2162,REPLY_RECEIVED,"06_reply.txt -> CONTACT_CHANGE (conf 0.95, engine llm)"
+2026-08-14,C-04,INV-2162,CONTACT_CHANGE_PROPOSED,inbound mail asks us to use ap-team@vantage.com; NOT applied automatically - a new remit-to contact is a human decision; old address marked undeliverable
+2026-08-15,C-10,INV-2354,INVOICE_SETTLED,payment 6291.33 received; balance cleared
+2026-08-15,C-11,INV-2377,REPLY_RECEIVED,"09_reply.txt -> BOUNCE (conf 0.99, engine llm)"
+2026-08-15,C-11,INV-2377,ADDRESS_UNDELIVERABLE,sam.ito@ingleby.com hard-bounced; future contact reroutes to controller
+2026-08-16,C-12,INV-2427,INVOICE_SETTLED,payment 9066.55 received; balance cleared
+2026-08-16,C-08,INV-2287,REPLY_RECEIVED,"10_reply.txt -> AUTO_TICKET (conf 0.97, engine llm)"
+2026-08-16,C-08,INV-2287,HOLD_SET,PORTAL_SLA until 2026-08-28 - 10 business days
+2026-08-17,C-02,INV-2084,INVOICE_SETTLED,payment 9801.29 received; balance cleared
+2026-08-17,C-10,INV-2356,REPLY_RECEIVED,"04_reply.txt -> DISPUTE (conf 0.95, engine llm)"
+2026-08-17,C-10,INV-2356,HOLD_SET,DISPUTE until 2026-08-27 - customer disputes whole balance; chasing suspended pending review
+2026-08-17,C-04,INV-2161,REPLY_RECEIVED,"20_reply.txt -> PO_MISMATCH (conf 0.98, engine llm)"
+2026-08-17,C-04,INV-2161,HOLD_DEFERRED,REISSUE_REQUIRED: INV-2161 is not issued until 2026-08-23; hold parked until then
+2026-08-18,C-03,INV-2119,INVOICE_SETTLED,payment 25492.85 received; balance cleared
+2026-08-18,C-09,INV-2324,REPLY_RECEIVED,"01_reply.txt -> OUT_OF_OFFICE (conf 0.99, engine llm)"
+2026-08-18,C-09,INV-2324,HOLD_SET,OOO_DEFER until 2026-09-01 - contact away until 2026-09-01
+2026-08-18,C-02,INV-2085,REPLY_RECEIVED,"13_reply.txt -> INVOICE_NOT_RECEIVED (conf 0.75, engine llm)"
+2026-08-18,C-02,INV-2085,HOLD_SET,"REISSUE_REQUIRED until 2026-08-25 - invoice cannot be processed as issued (PO/delivery problem); reissue is our action, not theirs"
+2026-08-19,C-06,INV-2231,REPLY_RECEIVED,"02_reply.txt -> CLAIMS_ALREADY_PAID (conf 0.97, engine llm)"
+2026-08-19,C-06,INV-2231,REPLY_ALREADY_RECONCILED,PAYMENT_IN_FLIGHT not applied: invoice was settled on 2026-08-11; the payment ledger already agrees with the customer
+2026-08-19,C-12,INV-2431,REPLY_RECEIVED,"08_reply.txt -> ACKNOWLEDGEMENT (conf 0.92, engine llm)"
+2026-08-19,C-12,INV-2431,ACKNOWLEDGED,customer acknowledged without committing; cadence clock reset
+2026-08-19,C-06,INV-2229,REPLY_RECEIVED,"16_reply.txt -> INFO_REQUEST (conf 0.95, engine llm)"
+2026-08-19,C-06,INV-2229,HOLD_SET,INFO_REQUEST until 2026-08-24 - customer asked us for information before paying
+2026-08-20,C-08,INV-2286,INVOICE_SETTLED,payment 116220.20 received; balance cleared
+2026-08-20,C-02,INV-2087,REPLY_RECEIVED,"03_reply.txt -> CLAIMS_ALREADY_PAID (conf 0.95, engine llm)"
+2026-08-20,C-02,INV-2087,HOLD_SET,PAYMENT_IN_FLIGHT until 2026-08-25 - customer states payment made/sent; awaiting bank reconciliation.
+2026-08-20,C-01,INV-2033,REPLY_RECEIVED,"12_reply.txt -> UNRECOGNIZED_INVOICE (conf 0.92, engine llm)"
+2026-08-20,C-01,INV-2033,HOLD_SET,"REISSUE_REQUIRED until 2026-08-27 - invoice cannot be processed as issued (PO/delivery problem); reissue is our action, not theirs"
+2026-08-20,C-10,INV-2357,REPLY_RECEIVED,"17_reply.txt -> INVOICE_NOT_RECEIVED (conf 0.85, engine llm)"
+2026-08-20,C-10,INV-2357,HOLD_SET,"REISSUE_REQUIRED until 2026-08-27 - invoice cannot be processed as issued (PO/delivery problem); reissue is our action, not theirs"
+2026-08-21,C-05,INV-2176,INVOICE_SETTLED,payment 314.27 received; balance cleared
+2026-08-21,C-04,INV-2160,INVOICE_SETTLED,payment 11520.61 received; balance cleared
+2026-08-21,C-07,INV-2267,REPLY_RECEIVED,"05_reply.txt -> PAYMENT_PLAN_REQUEST (conf 0.90, engine llm)"
+2026-08-21,C-07,INV-2267,HOLD_SET,PAYMENT_PLAN_PENDING until 2026-08-31 - customer requested a payment plan; agreement needs a human
+2026-08-21,C-03,INV-2122,REPLY_RECEIVED,"11_reply.txt -> LEGAL_THREAT (conf 1.00, engine override)"
+2026-08-21,C-03,INV-2122,LEGAL_LOCK,deterministic keyword override; every invoice on this account is frozen until a human releases it
+2026-08-21,C-03,INV-2122,HOLD_SET,LEGAL_HOLD until human release - rules=DISPUTE llm=LEGAL_THREAT; llm label used. legal keyword 'legal counsel' detected; deterministic override locked the account.
+2026-08-22,C-10,INV-2355,INVOICE_SETTLED,payment 18720.96 received; balance cleared
+2026-08-22,C-02,INV-2083,INVOICE_SETTLED,payment 8024.00 received; balance cleared
+2026-08-22,C-05,INV-2177,REPLY_RECEIVED,"07_reply.txt -> RELATIONSHIP_RISK (conf 0.95, engine llm)"
+2026-08-22,C-05,INV-2177,RELATIONSHIP_RISK,customer threatened the relationship; automated chasing frozen for 30d and handed to the account director
+2026-08-22,C-07,INV-2268,REPLY_RECEIVED,"18_reply.txt -> UNKNOWN (conf 0.82, engine llm)"
+2026-08-22,C-07,INV-2268,HOLD_SET,UNREADABLE_REPLY until 2026-08-25 - reply could not be classified with confidence (0.82); a human should read it
+2026-08-23,C-09,INV-2321,INVOICE_SETTLED,payment 5716.21 received; balance cleared
+2026-08-23,C-12,INV-2429,INVOICE_SETTLED,payment 11103.19 received; balance cleared
+2026-08-23,C-04,INV-2161,HOLD_SET,"REISSUE_REQUIRED until 2026-08-30 - deferred from the reply received 2026-08-17, which predated the invoice"
+2026-08-24,C-12,INV-2430,REPLY_RECEIVED,"19_reply.txt -> REMITTANCE_ADVICE (conf 0.99, engine llm)"
+2026-08-24,C-12,INV-2430,HOLD_SET,PAYMENT_IN_FLIGHT until 2026-08-29 - customer states payment made/sent; awaiting bank reconciliation. customer states payment made/sent 2026-08-24; requires reconciliation.
+2026-08-24,C-05,INV-2178,HOLD_EXPIRED,PAYMENT_PLAN_PENDING expired
+2026-08-25,C-12,INV-2428,INVOICE_SETTLED,payment 11617.48 received; balance cleared
+2026-08-25,C-06,INV-2229,HOLD_EXPIRED,INFO_REQUEST expired
+2026-08-26,C-02,INV-2087,HOLD_EXPIRED,claimed payment never arrived; reconciliation window closed
+2026-08-26,C-02,INV-2085,HOLD_EXPIRED,REISSUE_REQUIRED expired
+2026-08-26,C-07,INV-2268,HOLD_EXPIRED,UNREADABLE_REPLY expired
+2026-08-26,C-06,INV-2231,DATA_QUALITY,"accounting export says status=open, payments say paid; the agent used the payment ledger"

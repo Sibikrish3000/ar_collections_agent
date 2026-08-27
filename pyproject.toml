@@ -1,0 +1,42 @@
+[project]
+name = "fs-collections-agent"
+version = "0.1.0"
+description = "Deterministic accounts-receivable collections agent with dry-run replay and open-invoice risk flagging"
+readme = "README.md"
+authors = [
+    { name = "sibi krishnamoorthy", email = "sibikrish3000@gmail.com" }
+]
+requires-python = ">=3.13"
+# PyYAML is the only runtime dependency: everything else is the standard
+# library, which is one fewer thing that can fail on a reviewer's machine.
+dependencies = [
+    "pyyaml==6.0.2",
+]
+
+[project.optional-dependencies]
+# Only needed for the optional `--llm` / `--llm-drafts` passes, which talk to any
+# OpenAI-compatible endpoint (base URL, key and model are configuration). The
+# default run is fully deterministic and never imports this.
+llm = [
+    "openai==1.109.1",
+]
+# Only needed for progress bars on LLM-assisted runs. The default run works without it.
+ui = [
+    "tqdm==4.70.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.2",
+]
+
+[project.scripts]
+fs-collections-agent = "fs_collections_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]

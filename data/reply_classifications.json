@@ -1,0 +1,392 @@
+{
+  "schema": 1,
+  "note": "Cached inbound-reply classifications. Committed so the replay reproduces exactly without an API key.",
+  "classifications": [
+    {
+      "source_file": "15_reply.txt",
+      "received_date": "2026-08-12",
+      "sender_email": "ilse.bakker@perrin.com",
+      "intent": "PROMISE_TO_PAY",
+      "promised_payment_date": "2026-08-29",
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.97,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2121"
+      ],
+      "customer_id": "C-03",
+      "resolved_invoice_id": "INV-2121",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "14_reply.txt",
+      "received_date": "2026-08-13",
+      "sender_email": "tom.ashworth@ardley.com",
+      "intent": "PAYMENT_PLAN_REQUEST",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.97,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2178"
+      ],
+      "customer_id": "C-05",
+      "resolved_invoice_id": "INV-2178",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "06_reply.txt",
+      "received_date": "2026-08-14",
+      "sender_email": "ravi.menon@vantage.com",
+      "intent": "CONTACT_CHANGE",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.95,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2162"
+      ],
+      "customer_id": "C-04",
+      "resolved_invoice_id": "INV-2162",
+      "unmatched_refs": [],
+      "new_email_address": "ap-team@vantage.com",
+      "notes": ""
+    },
+    {
+      "source_file": "09_reply.txt",
+      "received_date": "2026-08-15",
+      "sender_email": "mailer-daemon@ingleby.com",
+      "intent": "BOUNCE",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.99,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2377"
+      ],
+      "customer_id": "C-11",
+      "resolved_invoice_id": "INV-2377",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "hard bounce for sam.ito@ingleby.com. sender mailer-daemon@ingleby.com is not a known contact for C-11; matched on domain only, address unverified."
+    },
+    {
+      "source_file": "10_reply.txt",
+      "received_date": "2026-08-16",
+      "sender_email": "no-reply@kesteven-ap.com",
+      "intent": "AUTO_TICKET",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.97,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2287"
+      ],
+      "customer_id": "C-08",
+      "resolved_invoice_id": "INV-2287",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "customer AP portal ticket; SLA window applies. sender no-reply@kesteven-ap.com is not a known contact for C-08; matched on domain only, address unverified."
+    },
+    {
+      "source_file": "04_reply.txt",
+      "received_date": "2026-08-17",
+      "sender_email": "beth.calder@thackeray.com",
+      "intent": "DISPUTE",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.95,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2356"
+      ],
+      "customer_id": "C-10",
+      "resolved_invoice_id": "INV-2356",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "no figure quoted; whole balance treated as disputed."
+    },
+    {
+      "source_file": "20_reply.txt",
+      "received_date": "2026-08-17",
+      "sender_email": "ravi.menon@vantage.com",
+      "intent": "PO_MISMATCH",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.98,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2161"
+      ],
+      "customer_id": "C-04",
+      "resolved_invoice_id": "INV-2161",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "01_reply.txt",
+      "received_date": "2026-08-18",
+      "sender_email": "owen.pryce@dunmore.com",
+      "intent": "OUT_OF_OFFICE",
+      "promised_payment_date": null,
+      "defer_until": "2026-09-01",
+      "disputed_amount": 0.0,
+      "confidence_score": 0.99,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2324"
+      ],
+      "customer_id": "C-09",
+      "resolved_invoice_id": "INV-2324",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "13_reply.txt",
+      "received_date": "2026-08-18",
+      "sender_email": "marcus.whitfield@cormack.com",
+      "intent": "INVOICE_NOT_RECEIVED",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.75,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2085"
+      ],
+      "customer_id": "C-02",
+      "resolved_invoice_id": "INV-2085",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "02_reply.txt",
+      "received_date": "2026-08-19",
+      "sender_email": "grace.oduya@northbrook.com",
+      "intent": "CLAIMS_ALREADY_PAID",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.97,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2231"
+      ],
+      "customer_id": "C-06",
+      "resolved_invoice_id": "INV-2231",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "customer states payment made/sent 2026-08-11; requires reconciliation."
+    },
+    {
+      "source_file": "08_reply.txt",
+      "received_date": "2026-08-19",
+      "sender_email": "lucia.ferrari@woodvale.com",
+      "intent": "ACKNOWLEDGEMENT",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.92,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2431"
+      ],
+      "customer_id": "C-12",
+      "resolved_invoice_id": "INV-2431",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "16_reply.txt",
+      "received_date": "2026-08-19",
+      "sender_email": "grace.oduya@northbrook.com",
+      "intent": "INFO_REQUEST",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.95,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2229"
+      ],
+      "customer_id": "C-06",
+      "resolved_invoice_id": "INV-2229",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "03_reply.txt",
+      "received_date": "2026-08-20",
+      "sender_email": "marcus.whitfield@cormack.com",
+      "intent": "CLAIMS_ALREADY_PAID",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.95,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2087"
+      ],
+      "customer_id": "C-02",
+      "resolved_invoice_id": "INV-2087",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "12_reply.txt",
+      "received_date": "2026-08-20",
+      "sender_email": "dana.reyes@halvorsen.com",
+      "intent": "UNRECOGNIZED_INVOICE",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.92,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2033",
+        "INV-9911"
+      ],
+      "customer_id": "C-01",
+      "resolved_invoice_id": "INV-2033",
+      "unmatched_refs": [
+        "INV-9911"
+      ],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "17_reply.txt",
+      "received_date": "2026-08-20",
+      "sender_email": "helen.stubbs@thackeray.com",
+      "intent": "INVOICE_NOT_RECEIVED",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.85,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2357"
+      ],
+      "customer_id": "C-10",
+      "resolved_invoice_id": "INV-2357",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "rules=INFO_REQUEST llm=INVOICE_NOT_RECEIVED; llm label used. sender helen.stubbs@thackeray.com is not a known contact for C-10; matched on domain only, address unverified."
+    },
+    {
+      "source_file": "05_reply.txt",
+      "received_date": "2026-08-21",
+      "sender_email": "peter.lindgren@saltmarsh.com",
+      "intent": "PAYMENT_PLAN_REQUEST",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.9,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2267"
+      ],
+      "customer_id": "C-07",
+      "resolved_invoice_id": "INV-2267",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "rules=PARTIAL_PROMISE llm=PAYMENT_PLAN_REQUEST; llm label used."
+    },
+    {
+      "source_file": "11_reply.txt",
+      "received_date": "2026-08-21",
+      "sender_email": "ilse.bakker@perrin.com",
+      "intent": "LEGAL_THREAT",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 1.0,
+      "engine": "override",
+      "invoice_refs": [
+        "INV-2122"
+      ],
+      "customer_id": "C-03",
+      "resolved_invoice_id": "INV-2122",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": "rules=DISPUTE llm=LEGAL_THREAT; llm label used. legal keyword 'legal counsel' detected; deterministic override locked the account."
+    },
+    {
+      "source_file": "07_reply.txt",
+      "received_date": "2026-08-22",
+      "sender_email": "tom.ashworth@ardley.com",
+      "intent": "RELATIONSHIP_RISK",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.95,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2177"
+      ],
+      "customer_id": "C-05",
+      "resolved_invoice_id": "INV-2177",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "18_reply.txt",
+      "received_date": "2026-08-22",
+      "sender_email": "peter.lindgren@saltmarsh.com",
+      "intent": "UNKNOWN",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.82,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2268"
+      ],
+      "customer_id": "C-07",
+      "resolved_invoice_id": "INV-2268",
+      "unmatched_refs": [],
+      "new_email_address": null,
+      "notes": ""
+    },
+    {
+      "source_file": "19_reply.txt",
+      "received_date": "2026-08-24",
+      "sender_email": "lucia.ferrari@woodvale.com",
+      "intent": "REMITTANCE_ADVICE",
+      "promised_payment_date": null,
+      "defer_until": null,
+      "disputed_amount": 0.0,
+      "confidence_score": 0.99,
+      "engine": "llm",
+      "invoice_refs": [
+        "INV-2430",
+        "INV-9999"
+      ],
+      "customer_id": "C-12",
+      "resolved_invoice_id": "INV-2430",
+      "unmatched_refs": [
+        "INV-9999"
+      ],
+      "new_email_address": null,
+      "notes": "customer states payment made/sent 2026-08-24; requires reconciliation."
+    }
+  ]
+}

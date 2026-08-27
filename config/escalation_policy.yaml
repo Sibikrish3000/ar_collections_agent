@@ -1,0 +1,268 @@
+# =============================================================================
+# AR Collections escalation policy
+# -----------------------------------------------------------------------------
+# Every threshold, timing, recipient, hold window and risk weight the agent uses
+# lives in this file. Changing collections behaviour must never require a code
+# change. The engine reads this file and nothing else for policy decisions.
+#
+# Roles resolve against data/contacts.csv `contact_type`:
+#   customer side : ap_contact, controller, ceo, owner
+#   our side      : sales_owner (account director), collections (AR analyst)
+# =============================================================================
+
+version: 1
+policy_name: "Graduated 4-tier AR escalation"
+
+# -----------------------------------------------------------------------------
+# Simulation window. The pack's ledger is current as of 2026-08-26.
+# -----------------------------------------------------------------------------
+simulation:
+  start_date: 2025-03-13        # first invoice issue date in the pack
+  end_date: 2026-08-26          # ledger as-of date
+  timezone_note: "All dates are calendar dates in the provider's local timezone."
+
+# -----------------------------------------------------------------------------
+# Escalation ladder. `days_past_due` is evaluated against EFFECTIVE days past
+# due (see judgment_rules.grace_periods), so a chronically-late-but-predictable
+# payer does not climb the ladder on their normal payment rhythm.
+#
+# auto_send: true  -> agent may send without a human
+# auto_send: false -> drafted and queued for human sign-off (HELD_FOR_APPROVAL)
+# -----------------------------------------------------------------------------
+escalation_tiers:
+  - tier: 1
+    name: "Operational nudge"
+    days_past_due: 3
+    to: [ap_contact]
+    cc: []
+    auto_send: true
+    template: gentle_reminder
+    rationale: >-
+      Most late invoices are an AP processing slip, not a refusal to pay. A
+      polite nudge to the person who actually keys the payment resolves them.
+
+  - tier: 2
+    name: "Firm reminder, controller visible"
+    days_past_due: 14
+    to: [ap_contact]
+    cc: [controller]
+    auto_send: true
+    template: firm_reminder
+    rationale: >-
+      Two weeks past terms is beyond a processing slip. Copying the customer's
+      financial controller adds accountability without changing who we ask.
+
+  - tier: 3
+    name: "Formal demand to controller"
+    days_past_due: 30
+    to: [controller]
+    cc: [sales_owner, collections]
+    auto_send: false
+    template: formal_demand
+    rationale: >-
+      The ask now moves off the AP clerk and onto the budget holder, and our own
+      account director is looped in. Wording carries commercial weight, so a
+      human signs it.
+
+  - tier: 4
+    name: "Executive escalation"
+    days_past_due: 45
+    to: [ceo, owner]
+    cc: [sales_owner, collections]
+    auto_send: false
+    template: executive_escalation
+    rationale: >-
+      Contacting a customer's CEO or owner is a relationship event, not a
+      collections step. Never automated, ever.
+
+# -----------------------------------------------------------------------------
+# Judgment rules. These encode the things the raw ladder gets wrong on this
+# ledger; each is tunable and each has an observable justification in the data.
+# -----------------------------------------------------------------------------
+judgment_rules:
+
+  # C-05 (Ardley & Sons) runs ~$300 invoices at 70 days late. Reply 07 is a
+  # nine-year customer threatening to leave over a $340 chase. Cost to collect
+  # exceeds the balance; these belong in a monthly statement, not on the ladder.
+  de_minimis:
+    enabled: true
+    min_balance_threshold: 500.00
+    max_tier: 1                 # never escalate a small balance past Tier 1
+    route_to: sales_owner       # hand the relationship to the account director
+    reason: "Balance below cost-to-collect threshold; consolidate onto statement."
+
+  cadence:
+    repeat_interval_days: 7           # days between reminders on the same invoice
+    max_reminders_per_tier: 2         # then wait for the next tier to open
+    max_reminders_per_invoice: 8      # absolute stop; escalate to human instead
+    business_days_only: true          # no sends Sat/Sun
+    max_daily_contacts_per_customer: 1  # one email per customer per day, max
+    daily_priority: largest_balance_first
+
+  # C-02, C-07, C-08, C-10 pay 100% of invoices late by a stable margin
+  # (median 15-36 days, low variance). That is their payment rhythm, not
+  # distress. Grace = trailing median lateness KNOWN AS OF the simulated date,
+  # clamped to the cap below. Requires enough history to be a rhythm, not noise.
+  grace_periods:
+    enabled: true
+    chronic_late_offset_days: 15      # hard cap on the grace granted
+    min_history_invoices: 3
+    trailing_window_days: 365
+    max_volatility_days: 12           # erratic payers (high sd) get no grace
+
+  # Hold windows. A hold suppresses escalation; it does not close the invoice.
+  holds:
+    payment_in_flight_hold_days: 5    # "already paid" / remittance advice
+    promise_to_pay_grace_days: 2      # slack after a promised date before re-chasing
+    dispute_review_days: 10
+    payment_plan_review_days: 10
+    reissue_required_days: 7          # PO mismatch / invoice never received
+    info_request_days: 5              # statement of account, invoice copy
+    portal_sla_business_days: 10      # customer AP portal ticket SLA (C-08)
+    ooo_defer_days: 3
+    relationship_risk_days: 30        # freeze after an explicit complaint
+    unknown_intent_days: 3            # a reply we could not read pauses the ladder
+
+  # Legal / insolvency language locks the account. Deterministic regex, applied
+  # after any LLM output and overriding it unconditionally.
+  legal_lock:
+    keywords:
+      - attorney
+      - lawsuit
+      - litigation
+      - legal team
+      - legal counsel
+      - our lawyers
+      - bankrupt
+      - bankruptcy
+      - insolvency
+      - receivership
+      - administration
+      - chapter 11
+    absorbing: true                   # only a human can release a legal hold
+    reason: "Legal/insolvency language detected; all outbound chasing frozen."
+
+  deliverability:
+    hard_bounce_marks_undeliverable: true
+    reroute_to: controller            # when the primary address is dead
+    accept_inbound_contact_change: false  # a new address from an email is a human decision
+
+# -----------------------------------------------------------------------------
+# What the agent may never do without a human, regardless of tier config.
+# The engine asserts these; a policy file cannot switch them off.
+# -----------------------------------------------------------------------------
+guardrails:
+  never_auto_send_to_roles: [ceo, owner]
+  never_auto_send_when_hold_active: true
+  never_auto_send_to_unverified_address: true
+  never_auto_send_dispute_or_legal_response: true
+  never_auto_agree_payment_plan: true
+  max_auto_sends_per_customer_per_week: 3
+
+# -----------------------------------------------------------------------------
+# Risk model (open invoices as of the ledger date). Pure statistics, no ML:
+# score = sum(weight * normalised factor), banded below.
+# -----------------------------------------------------------------------------
+risk_model:
+  trailing_window_days: 365
+  weights:
+    historical_mean_days_late: 0.30
+    pct_invoices_paid_late: 0.20
+    payment_volatility: 0.10
+    current_aging: 0.15
+    active_dispute_or_legal: 0.15
+    unresponsive_or_undeliverable: 0.05
+    exposure_share: 0.05
+  bands:
+    high: 0.55
+    medium: 0.30
+  normalisation:
+    mean_days_late_cap: 60
+    aging_days_cap: 60
+    volatility_cap: 25
+
+# -----------------------------------------------------------------------------
+# Message copy. `{placeholders}` are filled deterministically by the engine.
+# The optional LLM drafter rewrites the body only; subject, recipients, amounts
+# and dates are always computed in Python.
+# -----------------------------------------------------------------------------
+templates:
+  gentle_reminder:
+    subject: "Invoice {invoice_id} - {days_past_due} days past due"
+    body: |-
+      Hi {contact_first_name},
+
+      A quick reminder that invoice {invoice_id} for {amount} was due on
+      {due_date} and is now {days_past_due} days past due. The outstanding
+      balance is {balance}.
+
+      If it is already scheduled for payment, could you let me know the run
+      date? If anything is blocking it, tell me what you need and I will sort
+      it out.
+
+      Many thanks,
+      {sender_name}
+      {sender_title}
+
+  firm_reminder:
+    subject: "Overdue: invoice {invoice_id} - {days_past_due} days past due"
+    body: |-
+      Hi {contact_first_name},
+
+      Invoice {invoice_id} for {amount}, due {due_date}, remains unpaid at
+      {days_past_due} days past due. The outstanding balance is {balance}.
+
+      I have copied {cc_names} so they have visibility. Please confirm a payment
+      date by return, or let me know today if there is a query holding this up.
+
+      Regards,
+      {sender_name}
+      {sender_title}
+
+  formal_demand:
+    subject: "Formal notice: invoice {invoice_id} {days_past_due} days past due"
+    body: |-
+      Dear {contact_first_name},
+
+      Invoice {invoice_id} for {amount} fell due on {due_date} and is now
+      {days_past_due} days past due, with {balance} outstanding. Earlier
+      reminders to accounts payable have not resulted in payment.
+
+      Please arrange settlement within five business days, or contact me to
+      agree a written payment schedule. Continued non-payment will be referred
+      internally for a decision on the account.
+
+      Regards,
+      {sender_name}
+      {sender_title}
+
+  executive_escalation:
+    subject: "Escalation: overdue balance on account {customer_name}"
+    body: |-
+      Dear {contact_first_name},
+
+      I am writing to you directly regarding invoice {invoice_id} for {amount},
+      due {due_date} and now {days_past_due} days past due, with {balance}
+      outstanding. We have contacted accounts payable and your finance function
+      without resolution.
+
+      We value the relationship and would prefer to resolve this commercially.
+      Please let us know how you would like to proceed by {response_deadline}.
+
+      Regards,
+      {sender_name}
+      {sender_title}
+
+  # Sent to our own account director, never to the customer.
+  internal_handover:
+    subject: "[Internal] {customer_name} / {invoice_id} needs an owner - {hold_reason}"
+    body: |-
+      {customer_name} invoice {invoice_id} ({amount}, due {due_date},
+      {days_past_due} days past due, balance {balance}) has been taken off the
+      automated ladder.
+
+      Reason: {hold_reason}
+      Detail: {trigger_reason}
+
+      No further automated contact will be made on this invoice until a human
+      clears it.

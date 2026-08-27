@@ -1,0 +1,3 @@
+date,source_file,sender_email,intent,invoice_refs,issue
+2026-08-20,12_reply.txt,dana.reyes@halvorsen.com,UNRECOGNIZED_INVOICE,INV-9911,customer quoted an invoice id we have never issued
+2026-08-24,19_reply.txt,lucia.ferrari@woodvale.com,REMITTANCE_ADVICE,INV-9999,customer quoted an invoice id we have never issued
